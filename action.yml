@@ -1,6 +1,9 @@
 name: 'Cloud Run'
 description: 'Authenticate with gcloud, push image to GCR and deploy as a new revision to Cloud Run'
 author: 'David Stefan <stefda@gmail.com>'
+branding:
+  icon: 'arrow-up-circle'
+  color: 'green'
 inputs:
   image:
     description: 'Name of the docker image'
