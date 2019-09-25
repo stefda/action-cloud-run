@@ -5,7 +5,7 @@ An GitHub Action for deploying revisions to Google Cloud Run.
 ## Usage
 
 In your actions workflow, somewhere after the step that builds
-`eu.gcr.io/<your-project>/<image>`, insert this:
+`gcr.io/<your-project>/<image>`, insert this:
 
 ```bash
 - name: Deploy service to Cloud Run
