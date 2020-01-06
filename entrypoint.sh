@@ -19,8 +19,6 @@ fi
 gcloud auth activate-service-account --key-file="$HOME"/gcloud.json --project "$INPUT_PROJECT"
 gcloud auth configure-docker
 
-gcloud builds submit --tag $INPUT_IMAGE
-
 gcloud run deploy "$INPUT_SERVICE" \
   --image "$INPUT_IMAGE" \
   --region "$INPUT_REGION" \
