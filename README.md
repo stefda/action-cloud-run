@@ -10,7 +10,7 @@ In your actions workflow, somewhere after the step that builds
 
 ```bash
 - name: Deploy service to Cloud Run
-  uses: stefda/action-cloud-run@v1.0
+  uses: hackinteach/action-cloud-run@v1.0
   with:
     image: gcr.io/[your-project]/[image]
     service: [your-service]
@@ -32,3 +32,5 @@ format.
 
 The `env` input is optional. If you don't provide a path to env file the run
 deployment will be triggered with the `--clear-env-vars` flag.
+
+Add `cloud_sql` input to link to CloudSQL instance.
