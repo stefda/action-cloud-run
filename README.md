@@ -1,4 +1,3 @@
-> This repo was forked from https://github.com/marketplace/actions/cloud-run
 # Github Action for Google Cloud Run
 
 An GitHub Action for deploying revisions to Google Cloud Run.
@@ -10,7 +9,7 @@ In your actions workflow, somewhere after the step that builds
 
 ```bash
 - name: Deploy service to Cloud Run
-  uses: hackinteach/action-cloud-run@v1.0
+  uses: stefda/action-cloud-run@v1.0
   with:
     image: gcr.io/[your-project]/[image]
     service: [your-service]
