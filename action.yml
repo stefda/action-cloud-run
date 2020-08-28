@@ -1,5 +1,5 @@
 name: 'Cloud Run w/ CloudSQL'
-description: 'Authenticate with gcloud, push image to GCR and deploy as a new revision to Cloud Run, allow CloudSQL connection <forked from David Stefan>'
+description: 'Authenticate with gcloud, push image to GCR and deploy as a new revision to Cloud Run, allow CloudSQL connection'
 author: 'Nuttapat Koonarangsri'
 branding:
   icon: 'arrow-up-circle'
