@@ -1,6 +1,6 @@
-name: 'Cloud Run'
-description: 'Authenticate with gcloud, push image to GCR and deploy as a new revision to Cloud Run'
-author: 'David Stefan <stefda@gmail.com>'
+name: 'Cloud Run w/ CloudSQL'
+description: 'Authenticate with gcloud, push image to GCR and deploy as a new revision to Cloud Run, allow CloudSQL connection <forked from David Stefan>'
+author: 'Nuttapat Koonarangsri'
 branding:
   icon: 'arrow-up-circle'
   color: 'green'
