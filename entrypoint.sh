@@ -18,9 +18,9 @@ else
 fi
 
 
-if ["$INPUT_CLOUD_SQL"]
+if [ "$INPUT_CLOUD_SQL" ]
 then
-    ENV_FLAG="--add-cloudsql-instances $INPUT_CLOUD_SQL --update-env-vars INSTANCE_CONNECTION_NAME=$INPUT_CLOUD_SQL $ENV_FLAG"
+    ENV_FLAG="--add-cloudsql-instances $INPUT_CLOUD_SQL --set-env-vars INSTANCE_CONNECTION_NAME=$INPUT_CLOUD_SQL $ENV_FLAG"
 fi
 
 gcloud auth activate-service-account --key-file="$HOME"/gcloud.json --project "$INPUT_PROJECT"
