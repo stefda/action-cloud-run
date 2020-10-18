@@ -20,7 +20,7 @@ In your actions workflow, somewhere after the step that builds
 ```
 
 Your `GCLOUD_AUTH` secret (or whatever you name it) must be a base64 encoded
-gcloud service key with the following permissions:
+gcloud JSON service key with the following permissions:
 - Service Account User
 - Cloud Run Admin
 - Storage Admin
