@@ -24,6 +24,7 @@ gcloud service key with the following permissions:
 - Service Account User
 - Cloud Run Admin
 - Storage Admin
+- Cloud Run Service Agent
 
 The image must be "pushable" to one of Google's container registries, i.e. it
 should be in the `gcr.io/[project]/[image]` or `eu.gcr.io/[project]/[image]`
