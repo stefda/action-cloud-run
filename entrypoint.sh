@@ -6,8 +6,6 @@ echo "$INPUT_SERVICE_KEY" | base64 --decode > "$HOME"/gcloud.json
 
 if [ "$INPUT_ENV" ]
 then
-    ls . -all
-    ls /github/workspace -all
     ENVS=$(cat "/github/workspace/$INPUT_ENV" | xargs | sed 's/ /,/g')
 fi
 
