@@ -21,9 +21,11 @@ gcloud auth configure-docker
 
 docker push "$INPUT_IMAGE"
 
-gcloud beta run deploy "$INPUT_SERVICE" \
+gcloud run deploy "$INPUT_SERVICE" \
   --image "$INPUT_IMAGE" \
   --region "$INPUT_REGION" \
   --platform managed \
   --allow-unauthenticated \
   ${ENV_FLAG}
+
+gcloud run services update-traffic "$INPUT_SERVICE" --to-latest
