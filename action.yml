@@ -20,6 +20,8 @@ inputs:
   service key:
     description: 'GCP service key with storage and run permissions'
     required: true
+  cloud sql:
+    description: 'CloudSQL instance name'
   env:
     description: 'Path to .env file which will be added to the Cloud Run deployment'
     required: false

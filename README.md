@@ -41,3 +41,9 @@ doesn't have access to the path in the `working-directory` config, and so if the
 subdirectory of your repo, you have to supply the path to your .env file relative to root. 
 
 If you don't provide a path to .env file the deployment will be triggered with the `--clear-env-vars` flag.
+
+## Connecting to CloudSQL instance
+
+The `cloud sql` input links your service to a CloudSQL instance. See
+the [doc](https://cloud.google.com/sql/docs/mysql/connect-run) that explains
+what happend behind the scenes.
