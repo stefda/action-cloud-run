@@ -9,7 +9,7 @@ In your actions workflow, somewhere after the step that builds
 
 ```bash
 - name: Deploy service to Cloud Run
-  uses: stefda/action-cloud-run@v1.5
+  uses: stefda/action-cloud-run@v1.6
   with:
     image: gcr.io/[your-project]/[image]
     service: [your-service]
@@ -46,4 +46,4 @@ If you don't provide a path to .env file the deployment will be triggered with t
 
 The `cloud sql` input links your service to a CloudSQL instance. See
 the [doc](https://cloud.google.com/sql/docs/mysql/connect-run) that explains
-what happend behind the scenes.
+what happens behind the scenes.
