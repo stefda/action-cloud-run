@@ -23,6 +23,11 @@ then
     ENV_FLAG="--add-cloudsql-instances $INPUT_CLOUD_SQL --set-env-vars INSTANCE_CONNECTION_NAME=$INPUT_CLOUD_SQL $ENV_FLAG"
 fi
 
+if [ "$VPC_CONNECTOR" ]
+then
+    ENV_FLAG="--vpc-connector $VPC_CONNECTOR"
+fi
+
 gcloud auth activate-service-account --key-file="$HOME"/gcloud.json --project "$INPUT_PROJECT"
 gcloud auth configure-docker
 

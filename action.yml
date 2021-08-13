@@ -25,6 +25,9 @@ inputs:
   env:
     description: 'Path to .env file which will be added to the Cloud Run deployment'
     required: false
+  vpc connector:
+    description: 'VPC connector name'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
