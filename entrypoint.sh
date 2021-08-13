@@ -25,7 +25,7 @@ fi
 
 if [ "$INPUT_VPC_CONNECTOR" ]
 then
-    ENV_FLAG="--vpc-connector $INPUT_VPC_CONNECTOR"
+    ENV_FLAG="--vpc-connector $INPUT_VPC_CONNECTOR $ENV_FLAG"
 fi
 
 gcloud auth activate-service-account --key-file="$HOME"/gcloud.json --project "$INPUT_PROJECT"
