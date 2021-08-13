@@ -47,3 +47,9 @@ If you don't provide a path to .env file the deployment will be triggered with t
 The `cloud sql` input links your service to a CloudSQL instance. See
 the [doc](https://cloud.google.com/sql/docs/mysql/connect-run) that explains
 what happens behind the scenes.
+
+## Connecting to VPC network
+
+The `vpc connector` can be optionally pointed to a vpc connector string, for example when your service relies
+on a cloud redis instance. For more information on how Cloud Run connects to VPC networks read up on the [official
+documentation](https://cloud.google.com/run/docs/configuring/connecting-vpc).
