@@ -2,6 +2,10 @@
 
 An GitHub Action for deploying revisions to Google Cloud Run.
 
+## v2 breaking changes
+
+Version 2 assumes that the deployed image is already pushed into Container Registry.
+
 ## Usage
 
 In your actions workflow, somewhere after the step that builds
